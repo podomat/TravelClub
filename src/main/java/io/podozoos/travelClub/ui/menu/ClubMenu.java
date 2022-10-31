@@ -61,7 +61,7 @@ public class ClubMenu {
             scanner.nextLine();
             return menuNumber;
         } else {
-            System.out.Println("It's a invalid number --> " + menuNumber);
+            System.out.println("It's a invalid number --> " + menuNumber);
             return -1;
         }
     }
