@@ -1,13 +1,17 @@
 package io.podozoos.travelClub.ui.menu;
 
+import io.podozoos.travelClub.ui.console.ClubConsole;
+
 import java.util.Scanner;
 
 public class ClubMenu {
 
     private Scanner scanner;
+    private ClubConsole console;
 
     public ClubMenu() {
         scanner = new Scanner(System.in);
+        console = new ClubConsole();
     }
 
     public void show() {
@@ -21,8 +25,10 @@ public class ClubMenu {
 
             switch (inputNumber) {
                 case 1:
+                    console.register();
                     break;
                 case 2:
+                    console.findAll();
                     break;
                 case 3:
                     break;
